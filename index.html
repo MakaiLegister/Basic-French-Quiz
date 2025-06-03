@@ -3,16 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>French Retrieval Practice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
+    .exercise {
+      background: white;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 0.5rem;
+      }
+      .exercise {
+        padding: 0.75rem;
+      }
+      input[type="text"] {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Phrases essentielles de secours pour rester en Français.</h1>
-  <div class="exercise">
-    <label for="response1">Listen & type what you hear</label>
-    <audio controls>
-      <source src="audio/Quand tu ne connais pas un mot.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <input type="text" id="response1" placeholder="Type your answer here">
-  </div>
+  <main>
+    <h1>Phrases essentielles de secours pour rester en Français.</h1>
+    <div class="exercise">
+      <label for="response1">Listen & type what you hear</label>
+      <audio controls>
+        <source src="Audio/Quand tu ne connais pas un mot.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <input type="text" id="response1" placeholder="Type your answer here">
+    </div>
+  </main>
 </body>
 </html>
